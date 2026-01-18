@@ -3,45 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoguiRescue | Innovación Animal</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Quieres ser mi novia encoded</title>
 </head>
 <body>
-    <div class="container">
-        
-        <div id="gifContainer">
-            <img id="gifContainerImg" src="https://encoded.pe/sanvalentin/mocha.gif" alt="Ositos Iniciales" ">
-        </div>
-        <div id="happyGifContainer" style="display: none;">
-            <img src="https://encoded.pe/sanvalentin/mocha.gif" alt="Ositos Felices" style="width: 60%; height: 60%;">
-        </div>
-        <div id="happyGifContainer2" style="display: none;">
-            <img src="https://encoded.pe/sanvalentin/mocha6final.gif" alt="Ositos Felices" style="width: 100%; height: 100%;">
-        </div>
-        <div id="happyGifContainer3" style="display: none;">
-            <img src="https://encoded.pe/sanvalentin/mocha7final.gif" alt="Ositos Felices" style="width: 100%; height: 100%;">
-        </div>
-        <div id="happyGifContainer4" style="display: none;">
-            <img src="https://encoded.pe/sanvalentin/mocha9final.gif" alt="Ositos Felices" style="width: 100%; height: 100%;">
-        </div>
-        <div id="sadGifContainer" style="display: none;">
-            <img src="https://encoded.pe/sanvalentin/mocha2.gif" alt="Osito Triste" style="width: 60%; height: 60%;">
-        </div>
-        <div id="sadGifContainer1" style="display: none;">
-            <img src="https://encoded.pe/sanvalentin/mocha3.gif" alt="Osito Triste" style="width: 60%; height: 60%;">
-        </div>
-        <div id="sadGifContainer2" style="display: none;">
-            <img src="https://encoded.pe/sanvalentin/mocha4.gif" alt="Osito Triste" style="width: 60%; height: 60%;">
-        </div>
-        
-        <h1 id="question">¿Quieres ser mi Novia?</h1>
-        <div id="messageContainer" style="display: none;"></div>
 
-        <button id="siBtn">Sí</button>
-        <button id="noBtn">No</button>
-        
-    </div>
+    <nav>
+        <div class="logo">DoguiRescue.</div>
+        <button class="btn-nav">Donar</button>
+    </nav>
 
-    <script src="script.js"></script>
+    <section class="hero">
+        <div class="glow" style="top: 20%; left: 20%;"></div>
+        <div class="glow" style="bottom: 20%; right: 20%; background: var(--accent);"></div>
+
+        <div class="hero-content">
+            <h1>Salva una vida,<br><span>Gana un amigo.</span></h1>
+            <p>Conectamos corazones solitarios con patitas que necesitan un hogar. Tecnología al servicio del amor animal.</p>
+            <a href="#adopta" class="btn-main">Adoptar Ahora 🐾</a>
+        </div>
+    </section>
+
+    <section class="mascotas" id="adopta">
+        <h2 style="font-size: 2.5rem; text-align: center;">Nuestros Héroes <span style="color:var(--accent)">.</span></h2>
+        
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Perro">
+                <div class="info">
+                    <h3>Max</h3>
+                    <p>3 años • Macho • Muy juguetón</p>
+                    <span class="tag">Urgente</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Perro">
+                <div class="info">
+                    <h3>Luna</h3>
+                    <p>5 meses • Hembra • Cachorra</p>
+                    <span class="tag">Nuevo ingreso</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Perro">
+                <div class="info">
+                    <h3>Rocky</h3>
+                    <p>5 años • Macho • Tranquilo</p>
+                    <span class="tag">Especial</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Noticias -->
+    <section class="noticias" id="noticias">
+        <div class="container">
+            <h2>Últimas Noticias <span style="color:var(--accent)">.</span></h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <img src="https://images.unsplash.com/photo-1601753153183-27d9a8323e4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Campaña de adopción">
+                    <div class="news-content">
+                        <span class="news-date">15 de Enero, 2024</span>
+                        <h3>Campaña de Adopción Exitosa</h3>
+                        <p>Este mes logramos encontrar hogares para 15 perritos gracias a tu apoyo. ¡Seguimos trabajando por más!</p>
+                        <a href="#" class="read-more">Leer más →</a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="https://images.unsplash.com/photo-1574101265638-e53679d0b0d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Voluntariado">
+                    <div class="news-content">
+                        <span class="news-date">10 de Enero, 2024</span>
+                        <h3>Convocatoria de Voluntarios</h3>
+                        <p>Buscamos personas comprometidas para unirse a nuestro equipo de voluntarios. Ven y marca la diferencia.</p>
+                        <a href="#" class="read-more">Leer más →</a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Historia de éxito">
+                    <div class="news-content">
+                        <span class="news-date">5 de Enero, 2024</span>
+                        <h3>Historia de Éxito: Toby</h3>
+                        <p>Conoce la conmovedora historia de Toby, quien encontró su familia perfecta después de 6 meses en el refugio.</p>
+                        <a href="#" class="read-more">Leer más →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Fondo de Adopción -->
+    <section class="fondo-adopcion">
+        <div class="container">
+            <div class="fondo-content">
+                <div class="fondo-text">
+                    <h2>Fondo de Adopción Solidaria</h2>
+                    <p>Tu donación ayuda a cubrir gastos veterinarios, alimentación y cuidado de nuestros rescatados mientras encuentran su hogar.</p>
+                    <div class="fondo-stats">
+                        <div class="stat">
+                            <span class="stat-number">$45,230</span>
+                            <span class="stat-label">Recaudado este mes</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">127</span>
+                            <span class="stat-label">Animales ayudados</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">89%</span>
+                            <span class="stat-label">Meta alcanzada</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 89%"></div>
+                    </div>
+                    <button class="btn-donar">Donar Ahora</button>
+                </div>
+                <div class="fondo-image">
+                    <img src="https://images.unsplash.com/photo-1601753153183-27d9a8323e4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Perros felices">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Conversation Status -->
+    <section class="conversation-status">
+        <div class="container">
+            <h2>Estado de Conversaciones <span style="color:var(--accent)">.</span></h2>
+            <div class="status-grid">
+                <div class="status-card active">
+                    <div class="status-icon">💬</div>
+                    <h3>Conversaciones Activas</h3>
+                    <p class="status-number">23</p>
+                    <p class="status-desc">Personas interesadas en adopción</p>
+                </div>
+
+                <div class="status-card pending">
+                    <div class="status-icon">⏳</div>
+                    <h3>En Proceso</h3>
+                    <p class="status-number">8</p>
+                    <p class="status-desc">Adopciones en revisión</p>
+                </div>
+
+                <div class="status-card completed">
+                    <div class="status-icon">✅</div>
+                    <h3>Adopciones Completadas</h3>
+                    <p class="status-number">15</p>
+                    <p class="status-desc">Este mes</p>
+                </div>
+
+                <div class="status-card followup">
+                    <div class="status-icon">🔄</div>
+                    <h3>Seguimiento</h3>
+                    <p class="status-number">42</p>
+                    <p class="status-desc">Familias en seguimiento post-adopción</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">DoguiRescue.</div>
+                    <p>Tecnología al servicio del amor animal. Conectando corazones con patitas que necesitan un hogar.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">📧</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#adopta">Adoptar</a></li>
+                        <li><a href="#noticias">Noticias</a></li>
+                        <li><a href="#">Donar</a></li>
+                        <li><a href="#">Voluntariado</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li>📞 +51 123 456 789</li>
+                        <li>📧 info@doguirescue.org</li>
+                        <li>📍 Av. Mascotas 123, Lima</li>
+                        <li>🕐 Lun-Dom: 9:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Suscríbete para recibir noticias y historias de éxito</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit">Suscribir</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 DoguiRescue. Todos los derechos reservados.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Política de Privacidad</a>
+                        <a href="#">Términos de Servicio</a>
+                        <a href="#">Política de Adopción</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
